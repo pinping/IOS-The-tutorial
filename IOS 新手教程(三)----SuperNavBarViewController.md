@@ -1,7 +1,17 @@
-#IOS 新手教程(三)
+#IOS 新手教程(三)----SuperNavBarViewController
 
 接着上一篇教程
 
+```swift
+// TODO: Block声明
+typealias funcBlock = ()->()
+typealias funcBlockJson = (JSON)->()
+typealias funcBlockInts = (Int,Int)->()
+typealias funcBlockInt = (Int)->()
+typealias funcBlockId = (AnyObject)->()
+typealias funcBlockStr = (String)->()
+typealias funcBlockStrRet = (String)->String
+```
 > SuperNavBarViewController
 
 > 1.Navigation Bar Title 的颜色大小文字类容

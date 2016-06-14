@@ -1,4 +1,4 @@
-#IOS 新手教程(二)
+#IOS 新手教程(二)----SuperViewController
 
 接着上一篇教程
 

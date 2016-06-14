@@ -1,4 +1,4 @@
-#IOS 新手教程(一)
+#IOS 新手教程(一)----SuperTabBarViewController
 
 ##创建一个新的 None 的项目然后在新的项目里面添加 3 个类
 
