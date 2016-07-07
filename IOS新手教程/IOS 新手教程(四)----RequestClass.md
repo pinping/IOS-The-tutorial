@@ -37,7 +37,7 @@ func dataFailure() -> JSON {
 func allRequestClassUrl(method: Method,aUrl: String, Parameter:Dictionary<String,AnyObject>,aBlock:funcBlockJson){
     
     SVProgressHUD.show()
-    Alamofire.request(.GET, aUrl, parameters:globalParameter(Parameter)).responseJSON {response in
+    Alamofire.request(method, aUrl, parameters:globalParameter(Parameter)).responseJSON {response in
         
         SVProgressHUD.dismiss()
         switch response.result {
@@ -53,7 +53,7 @@ func allRequestClassUrl(method: Method,aUrl: String, Parameter:Dictionary<String
             break;
         case .Failure(let error):
             //print("GetRequest",error)
-            aBlock(dataFailure())
+            aBlock(self.dataFailure())
             break;
         }
     }
