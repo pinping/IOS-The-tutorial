@@ -1,4 +1,4 @@
-#IOS 自动化部署(一)----使用Fastlane上传到fir
+#IOS 自动化部署(二)----使用Fastlane上传到fir
 
 
 fastlane是一组工具套件，旨在实现iOS应用发布流程的自动化，并且提供一个运行良好的持续部署流程，只需要运行一个简单的命令就可以触发这个流程。
@@ -79,3 +79,4 @@ gym --workspace ${workspace_path} --scheme ${scheme} -clean --configuration ${co
 #输出总用时
 echo "===Finished. Total time: ${SECONDS}s==="
 ```
+> 把上面的代码 保存到 xxx.sh 文件里面, 放在 终端里面执行.
