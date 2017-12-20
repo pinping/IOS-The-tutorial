@@ -8,24 +8,19 @@
 ### 例子 针对1.的处理
 #### Objective-C
 ```Objective-C
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions  
-{  
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions  {  
      [self jumpToViewController:launchOptions];  
   
     return YES;  
 }  
   
 #pragma mark —页面跳转  
-- (void)jumpViewController:(NSDictionary*)tfdic  
-{  
+- (void)jumpViewController:(NSDictionary*)tfdic  {  
      NSDictionary *remoteNotification = [tfdic objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];  
       
-    if ([CHPaInterface isUserLogin])  
-    {  
-      for (NSString *tfStr in remoteNotification)  
-      {  
-        if ([tfStr isEqualToString:@"careline"])  
-        {  
+    if ([CHPaInterface isUserLogin])  {  
+      for (NSString *tfStr in remoteNotification)  {  
+        if ([tfStr isEqualToString:@"careline"])  {  
             ViewController *_viewController =  [[ViewController alloc]init];  
             [_viewController loadAPNSInfoDic:remoteNotification];  
             UINavigationController *nav= (UINavigationController *)self.window.rootViewController;  
